@@ -69,7 +69,7 @@ header p {
 
 .img--header {
     background-color: var(--cta);
-    background: url(/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg);
+    background: url(images/alexander-sinn-KgLtFCgfC28-unsplash.jpg);
     background-size: cover;
     flex: 1;
     min-height: 225px;
