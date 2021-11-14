@@ -12,53 +12,68 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li>Header Logo</li>
-                <li>Header Link 1</li>
-                <li>Header Link 2</li>
-                <li>Header Link 3</li>
+            <ul class="flex-container">
+                <li><a href="#"><img src="images/logo2.png" alt="logo" width="100"></a></li>
+                <li class="push"><a href="https://www.theodinproject.com/about">About</a></li>
+                <li><a href="https://www.theodinproject.com/faq">FAQ</a></li>
+                <li><a href="https://www.theodinproject.com/success_stories">Success Stories</a></li>
             </ul>
         </nav>
-        <h1>Ode to The Odin Project</h1>
-        <p>Discover the proper way of learning web development.</p>
-        <button>Learn more!</button>
-        <img src="" alt="placeholder for an image">
+        <div class="container--header">
+            <div class="item--header">
+                <h1>Ode to The Odin Project</h1>
+                <p>Discover the proper way of learning web development.</p>
+                <a href="https://www.theodinproject.com/home" class="btn">Learn more!</a>
+            </div>
+            <div class="img--header">
+            </div>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="information">
             <h2>Things to do:</h2>
-            <figure>
-                <img src="" alt="small placeholder">
-                <figcaption>Learn HTML & CSS</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="small placeholder">
-                <figcaption>Learn Javascript</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="small placeholder">
-                <figcaption>Learn frameworks</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="small placeholder">
-                <figcaption>Get hired!</figcaption>
-            </figure>
+            <div class="container--img">
+                <figure>
+                    <img src="images/css.png" alt="small placeholder">
+                    <figcaption>Learn HTML & CSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/js.png" alt="small placeholder">
+                    <figcaption>Learn Javascript</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/react.png" alt="small placeholder">
+                    <figcaption>Learn Frameworks</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/hired.png" alt="small placeholder">
+                    <figcaption>Get hired!</figcaption>
+                </figure>
+            </div>
         </section>
         <section class="quote">
-            <figure>
-                <blockquote>The Odin Project is not playing in a sandbox. It <em>will</em> hold you by the hand though,
+            <div class="container">
+                <blockquote>The Odin Project is not playing in a sandbox. It will hold you by the hand though,
                     but in a good way. It will walk you through the best
-                    available resources on web development. It will make you think. It will let you apply what you've learned.</blockquote>
-            </figure>
-            <figcaption>Me</figcaption>
+                    available resources on web development. It will provide <em>context</em>. It will make you
+                    <em>think</em> and let you
+                    <em>build from the ground up</em>.
+                </blockquote>
+                <cite>--Me</cite>
+            </div>
         </section>
         <section class="cta">
-            <h3>It's time to be a developer!</h3>
-            <p>Sign up for our product by clicking that button right over there!</p>
-            <button>Learn more</button>
+            <div class="container flex-container">
+                <div class="flex-item">
+                    <h3>It's time to be a developer!</h3>
+                    <p>Start learning for free by clicking that button right over there!</p>
+                </div>
+                <a href="https://www.theodinproject.com/home" class="btn">Learn more</a>
+            </div>
         </section>
     </main>
-    <footer>Copyright (c)The Odin Project, 2021</footer>
+    <footer>Coded and designed by <a href="https://github.com/je-jo">Jelena Jovicic</a> for <a
+            href="https://www.theodinproject.com/">The Odin Project</a>, 2021</footer>
 
 </body>
 

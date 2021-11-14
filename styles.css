@@ -1,6 +1,269 @@
 :root {
-    --dark: #1F2937;
+    --dark: #4f424c;
     --whitetext: #F9FAF8;
-    --lighttext: #E5E7EB;
-    --cta: #3882f6;
+    --lighttext: #e7e9db;
+    --cta: #ef6155;
+}
+
+* {
+    /* outline: 1px solid hotpink; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN LAYOUT ELEMENTS */
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    color: var(--dark);
+    background-color: var(--whitetext);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* flex: 1 1 100%; */
+    }
+    
+.flex-item {
+    /* flex-grow: 1; */
+    padding: 1em 2em;
+    }
+
+section {
+    margin: 0 auto;
+    padding: 2em .5em;
+    }
+
+/* HEADER */
+
+header {
+    padding: 0 15px;
+    background-color: var(--dark);
+    color: var(--whitetext);
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container--header {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    align-items: stretch;
+    gap: 50px;
+}
+.item--header {
+    flex: 1;
+}
+
+.img--header {
+    background-color: var(--cta);
+    background: url(/images/alexander-sinn-KgLtFCgfC28-unsplash.jpg);
+    background-size: cover;
+    flex: 1;
+    min-height: 225px;
+}
+
+
+
+
+h1, h2, h3, p {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 60px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 15px;
+}
+
+
+
+
+/* IMAGES */ 
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+nav img {
+    width: 75px;
+    box-shadow: inset 0px 10px 15px 2px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.container--img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1800px;
+    margin: auto;
+}
+
+figure {
+    padding: 20px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+  
+}
+
+figure img {
+    padding-bottom: 20px;
+    
+}
+
+figcaption {
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+
+
+/* QUOTE SECTION */ 
+
+blockquote, cite {
+    font-style: italic;
+    line-height: 1.8em;
+    padding: 1em 2em;
+    border-left: 5px solid var(--dark);
+  }
+  
+  em {
+      color: var(--cta);
+  }
+  
+  cite {
+      display: block;
+    font-size: 0.9em;
+    text-align: right;
+  }
+
+  .quote {
+    background-color: var(--lighttext);
+    font-size: 1.7rem;
+    font-weight: lighter;
+    
+}
+
+/* LINKS AND BUTTONS */
+
+.cta {
+    font-size: 1.5rem;
+    background-color: var(--cta);
+    color: var(--whitetext);
+    
+}
+
+a {
+    color: var(--whitetext);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cta);
+}
+
+a.btn:hover {
+    color: var(--whitetext);
+    background-color: #fec418;
+}
+
+
+
+.btn {
+    background-color: var(--cta);
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 16px auto;
+    border-radius: 5px;
+
+}
+
+.cta .btn {
+    border: 1px solid currentColor;
+    font-size: 1.5rem;
+    padding: 1em 2em;
+    margin: 0;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--dark);
+    color: var(--whitetext);
+    font-size: 1rem;
+    padding: 1.8rem 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 0 48px;
+    }
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .container--header {
+        flex-direction: row;
+        padding: 80px 15px;
+        text-align: left;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .flex-item {
+        text-align: left;
+    }
+
+    .push {
+        margin-left: auto;
+    }
+
+    figure {
+        max-width: 48%;
+    }
+
+    section {
+        padding: 5em 3em;
+        }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    figure {
+        max-width: 24%;
+    }
+
 }

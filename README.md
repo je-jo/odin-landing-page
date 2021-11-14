@@ -43,7 +43,8 @@ This was an easy and relaxing project, seeing I've already done the old lessons.
 
 ### Useful resources
 
-- [...](...) - Description
+- [Colors from Paraiso theme](https://github.com/idleberg/Paraiso-Color-Palettes)
+- [Cover Photo by Alexander Sinn](https://unsplash.com/photos/KgLtFCgfC28?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 ## Author
 
