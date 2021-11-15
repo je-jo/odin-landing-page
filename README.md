@@ -39,12 +39,15 @@ The aim of this project was to understand the basics of HTML and CSS, with focus
 
 ### The process
 
-This was an easy and relaxing project, seeing I've already done the old lessons. 
+This was not as easy, because once again I've underestimated the power of forward-planning...
 
 ### Useful resources
 
+- [Minireset](https://awesomeopensource.com/project/jgthms/minireset.css?categoryPage=29) - A tiny modern CSS reset. 
 - [Colors from Paraiso theme](https://github.com/idleberg/Paraiso-Color-Palettes)
-- [Cover Photo by Alexander Sinn](https://unsplash.com/photos/KgLtFCgfC28?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+- [Original Photo by Alexander Sinn](https://unsplash.com/photos/KgLtFCgfC28?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink) recolored by me to match the rest of the page better. The rest of the pictures are screenshots by me.
+- [This great article by Kevin Powell](https://www.kevinpowell.co/article/creating-a-website-getting-over-the-anxiety-of-starting-with-a-blank-file/) - A great starting point for new developers who struggle with planning their process.
+- [Materialize.css box shadow](https://materializecss.com/)
 
 ## Author
 
