@@ -5,14 +5,10 @@
     --whitetext: #F9FAF8;
     --lighttext: #e7e9db;
     --cta: #ef6155;
-    --hover: #fec418;
-}
-
-* {
-    outline: 1px solid red;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --hover: #f99b15;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
 }
 
 /* MAIN LAYOUT ELEMENTS */
@@ -25,16 +21,15 @@ body {
 }
 
 section {
-    margin: 0 auto;
     padding: 2em .5em;
     }
 
-.container {
+section > * {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.flex-container {
+.flexible {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,8 +39,6 @@ section {
 .flex-item {
     padding: 1em 2em;
     }
-
-
 
 /* HEADER */
 
@@ -65,10 +58,6 @@ ul {
 
 li {
     padding: 15px;
-}
-
-header p {
-    font-size: 1.2rem;
 }
 
 .container--header {
@@ -91,23 +80,40 @@ header p {
     min-height: 225px;
 }
 
-
 /* TYPOGRAPHY */
 
 h1, h2, h3, p {
     padding: 20px 0;
 }
 
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+}
+
 h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: -1.5px;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 3.75rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
     padding: 60px 0;
 }
 
+h3 {
+    font-size: 3rem;
+}
+
+p, figcaption, blockquote {
+    font-size: 1.5rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+}
 
 /* IMAGES */ 
 
@@ -119,7 +125,6 @@ img {
 
 nav img {
     width: 75px;
-    /* box-shadow: inset 0px 10px 15px 2px rgba(0,0,0,0.1); */
     border-radius: 50%;
 }
 
@@ -127,7 +132,7 @@ nav img {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    max-width: 1800px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -140,15 +145,13 @@ figure {
 figcaption {
     padding: 20px;
     text-transform: uppercase;
-    font-weight: lighter;
-    font-size: 1.5rem;
+    font-weight: 300;
 }
-
-
 
 /* QUOTE SECTION */ 
 
 blockquote, cite {
+    font-family: serif;
     font-style: italic;
     line-height: 1.8em;
     padding: 1em 2em;
@@ -156,26 +159,23 @@ blockquote, cite {
   }
   
   em {
-      color: var(--cta);
+    color: var(--cta);
   }
   
   cite {
-      display: block;
-    font-size: 0.9em;
+    display: block;
     text-align: right;
   }
 
   .quote {
     background-color: var(--lighttext);
-    font-size: 1.7rem;
-    font-weight: lighter;
+    font-weight: 300;
     
 }
 
 /* LINKS AND BUTTONS */
 
 .cta {
-    font-size: 1.5rem;
     background-color: var(--cta);
     color: var(--whitetext);
     
@@ -195,25 +195,22 @@ a.btn:hover {
     background-color: var(--hover);
 }
 
-
-
 .btn {
     display: inline-block;
     background-color: var(--cta);
     color: #fff;
-    font-weight: bold;
-    padding: 0.5em 1em;
+    font-size: 0,9rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    padding: 1em;
     margin: 1em auto;
     border-radius: 5px;
-
 }
 
 .cta .btn {
     border: 1px solid currentColor;
-    font-size: 1.5rem;
     padding: 1em 2em;
     margin: 0;
-
 }
 
 /* FOOTER */
@@ -221,7 +218,6 @@ a.btn:hover {
 footer {
     background-color: var(--dark);
     color: var(--whitetext);
-    font-size: 1rem;
     padding: 1.8rem 0;
 }
 
@@ -231,13 +227,16 @@ footer {
         padding: 0 48px;
     }
 
-    .flex-container {
+    nav {
+        padding-bottom: 10px;
+    }
+
+    .flexible {
         flex-direction: row;
     }
 
     .container--header {
         flex-direction: row;
-        /* padding: 80px 15px; */
         text-align: left;
         max-width: 1440px;
         margin: 0 auto;

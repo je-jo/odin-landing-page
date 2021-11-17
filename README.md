@@ -36,10 +36,11 @@ The aim of this project was to understand the basics of HTML and CSS, with focus
 - Semantic HTML5 markup
 - CSS3
 - Flexbox
+- Mobile-first workflow
 
 ### The process
 
-This was not as easy, because once again I've underestimated the power of forward-planning...
+This was not as easy, because once again I've underestimated the power of forward-planning, but it was fun.
 
 ### Useful resources
 
